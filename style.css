@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./blurred-restaurant-background.avif') no-repeat center center/cover;
+}
+.hero button {
+    padding: 1em 2em;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: rgba(255, 211, 14, 0.898);
+    border: 1px solid rgba(255, 211, 14, 0.898);
+    font-weight: 600;
+    border-radius: 5px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: black;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid none;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+.close-btn {
+    color: rgba(255, 211, 14, 0.898);
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#contactForm{
+    padding: 30px 40px;
+
+}
+
+#contactForm h2{
+    color: rgba(255, 211, 14, 0.898);
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+.form-control{
+    margin-bottom: 25px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input,.form-control textarea {
+    border: 1px solid white;
+    background: none;
+    border-radius: 3px;
+    display: block;
+    padding: 8px;
+    color: rgba(255, 211, 14, 0.898);
+    width: 100%;
+    
+}
+.form-control input:hover,.form-control input:focus{
+    border-color: rgba(255, 211, 14, 0.898);
+    outline: none;
+}
+.form-control textarea:hover,.form-control textarea:focus{
+    border-color: rgba(255, 211, 14, 0.898);
+    outline: none;
+}
+.btn-control button{
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(255, 211, 14, 0.898);
+    font-weight: 600;
+    font-size: medium;
+    border-radius: 5px;
+    width: 100%;
+}
+.close-btn:hover,
+.close-btn:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.error {
+    color: red;
+    font-size: 10px;
+}
